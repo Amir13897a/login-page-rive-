@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود | فضای تاریک</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <section class="login-panel">
+        <div class="brand">
+          <h1>بازگشت  </h1>
+          <p>حساب خود را وارد کنید تا به اپلیکیشن کابوس دسترسی داشته باشید.</p>
+        </div>
+
+        <form class="login-form" autocomplete="off">
+          <label class="input-group">
+            <span>ایمیل</span>
+            <input type="email" placeholder="you@example.com" required />
+          </label>
+
+          <label class="input-group">
+            <span>رمز عبور</span>
+            <input type="password" placeholder="••••••••" required />
+          </label>
+
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox" />
+              <span>مرا به یاد بسپار</span>
+            </label>
+            <a href="#" class="forgot">فراموش کردی؟</a>
+          </div>
+
+          <button type="submit" class="submit">ورود به اپلیکیشن کابوس</button>
+        </form>
+
+        <div class="footer">
+          <span>حساب نداری؟</span>
+          <a href="#">ثبت نام در کابوس</a>
+        </div>
+      </section>
+
+      <section class="animation-panel">
+        <canvas id="skeleton-canvas"></canvas>
+        <div class="overlay">
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@rive-app/canvas@2.15.4/rive.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
